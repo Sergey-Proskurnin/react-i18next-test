@@ -1,12 +1,12 @@
-import React from "react";
-import { useTranslation } from "react-i18next";
-import logo from "./logo.svg";
-import "./App.css";
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
   const { t, i18n } = useTranslation();
 
-  const changeLanguage = (language) => {
+  const changeLanguage = language => {
     i18n.changeLanguage(language);
   };
 
@@ -26,12 +26,14 @@ function App() {
           Learn React
         </a>
       </header>
-      <button onClick={() => changeLanguage("en")}>EN</button>
-      <button onClick={() => changeLanguage("ru")}>RU</button>
+      <button onClick={() => changeLanguage('en')}>EN</button>
+      <button onClick={() => changeLanguage('ru')}>RU</button>
       <hr />
-      <div><h1>{t("title")}</h1></div>
-      <div>{t("description.part1")}</div>
-      <div>{t("description.part2")}</div>
+      <div>
+        <h1>{t('title')}</h1>
+      </div>
+      <div>{t('description.part1')}</div>
+      <div>{t('description.part2')}</div>
     </div>
   );
 }
