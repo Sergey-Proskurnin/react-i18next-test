@@ -1,7 +1,9 @@
 {
   "title": "Internationalizing with i18next",
   "description": {
-    "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
+    "part1": "To get started, edit src/App.js and save to reload.",
     "part2": "Switch language between english and russian using buttons above."
-  }
+  },
+  "link": "Learn React",
+  "headline": "Edit src/App.js and save to reload."
 }
