@@ -23,7 +23,7 @@ yarn add react-i18next i18next i18next-http-backend i18next-browser-languagedete
 ```
 All preparatory work is done. Internationalization can be added.
 ## i18next configuration
-___
+
 First, let's create a configuration file ```i18n.js```. Put it next to root file ```index.js```
 
 ```i18n.js```
@@ -59,6 +59,7 @@ export default i18n;
 Here, the necessary hooks are activated and the plugin settings are set: the base language, working with cookies, etc.
 
 Now let's import the configuration file in ```index.js```
+
 ```index.js```
 
 ```javascript
@@ -80,14 +81,15 @@ ReactDOM.render(
 ```
 The react i18next plugin is enabled and ready to use. The next step is to connect the necessary languages.
 ## Connecting locales
-___
+
 Internationalization on the web is usually based on json files, in which each word/word combination has its own translation. In our test application, we will work with English and Russian languages.
 
 In the ```/public``` directory, you need to add a new locales folder. Each language will have its own subfolder: ```/en``` and ```/ru``` - in each of them the json-file ```translation.json``` with translations.
 
 File for English:
-```/publiclocales/en/translation.json```
-```javascript
+
+```/public/locales/en/translation.json```
+```json
 {
   "title": "Internationalizing with i18next",
   "description": {
@@ -100,8 +102,8 @@ File for English:
 ```
 File for Russian:
 
-```locales/ru/translation.json```
-```javascript
+```/public/locales/ru/translation.json```
+```json
 {
   "title": "Интернационализация с i18next",
   "description": {
@@ -115,8 +117,9 @@ File for Russian:
 Now let's display the information on the application's home page.
 
 ## Setting App.js
-___
+
 Open the ```App.js``` file and replace its auto-generated contents with the following:
+
 ```App.js```
 ```javascript
 import React, { useState, useEffect } from 'react';
