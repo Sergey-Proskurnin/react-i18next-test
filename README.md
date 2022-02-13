@@ -58,7 +58,7 @@ export default i18n;
 ```
 Here, the necessary hooks are activated and the plugin settings are set: the base language, working with cookies, etc.
 
-Now let's import the configuration file in ```index.js```
+Now let's import the configuration file in ```index.js```. Where **be sure to wrap** `App.js` with react-component `Suspense`
 
 ```index.js```
 
