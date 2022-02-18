@@ -4,7 +4,7 @@
 
 ***[react-i18next-test](https://psg-i18next-test.netlify.app)*** - it is a test application for learning how to use internationalization-framework **[I18next](https://www.i18next.com/)**
 ## Project creation
-___
+
 First, let's deploy a new React-project using the command:
 ```javascript
 npx create-react-app my-app
