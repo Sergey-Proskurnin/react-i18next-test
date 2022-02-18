@@ -210,5 +210,8 @@ yarn start
 If you did everything right, then the magic should happen - the translation is done right while the application is running.
 
 ![alt text](./src/img/app.gif "Using react-i18next-test")
+
+Сomplete documentation for **React-i18next** **[here.](https://react.i18next.com/guides/multiple-translation-files)**
+
 ## Happy hacking!
 
